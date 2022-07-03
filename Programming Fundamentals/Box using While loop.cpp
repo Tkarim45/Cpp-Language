@@ -1,20 +1,20 @@
-/* Program that prints a box n*n with "*" Character*/
+// Program that prints a box n*n with "*" Character*/
 #include<iostream>
 using namespace std;
 int main ()
 {
 	int n,row,column;  //decalring integars
 	cout<<" Enter a Single Integar Value = "; cin>>n;
-	if(n>=1)
-	{   //condition for drawing a box
+	if(n>=1) //condition for drawing a box
+	{ // loop for repetition of nested while loop to form the box
 		for(row=0; row<n; row++)
-		{   // loop for repetition of nested while loop to form the box
+		{
 			cout<<" "<<endl;
 			column=0;      //initializing the row
-    		while(column<n)
-			{   //forming the row with "*" character 
-    			cout<<" * " ;
-   				column++;
+			while(column<n)
+			{  
+				cout<<" * " ;
+				column++;
 			}     
 		}
 		cout<<endl;
